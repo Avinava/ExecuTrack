@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import './app.css';
-import Home from './components/home';
+import React, { Component } from "react";
+import "./app.css";
+import Home from "./components/home";
 
 export default class App extends Component {
   state = {};
@@ -8,10 +8,6 @@ export default class App extends Component {
   componentDidMount() {}
 
   render() {
-    return (
-      <div>
-        <Home />
-      </div>
-    );
+    return <div>{/* <Home /> */}</div>;
   }
 }

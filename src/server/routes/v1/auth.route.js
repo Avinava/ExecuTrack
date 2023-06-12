@@ -24,4 +24,11 @@ router.get("/session", (req, res) => {
   res.json(req.user || {});
 });
 
+router.get("/production", passport.authenticate("forcedotcom"), console.log);
+router.get(
+  "/sandbox",
+  passport.authenticate("forcedotcom-sandbox"),
+  console.log
+);
+
 module.exports = router;
